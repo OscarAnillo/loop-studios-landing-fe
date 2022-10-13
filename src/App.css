@@ -67,7 +67,7 @@
   font-weight: 300;
   font-size: 2.1rem;
   text-transform: uppercase;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5em;
 }
 .article div p {
   font-family: 'Alata', sans-serif;
@@ -76,4 +76,203 @@
   line-height: 1.6em;
   width: 90%;
   margin: auto;
+}
+
+/* MainComponent */
+.main-h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-bottom: 2em;
+}
+
+/* CreationCommonComponent */
+.deep-earth {
+  background-image: url('/public/images/mobile/image-deep-earth.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  margin-bottom: 1em;
+}
+.deep-earth h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 50%;
+  text-align: left;
+}
+.night-arcade {
+  background-image: url('/public/images/mobile/image-night-arcade.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  margin-bottom: 1em;
+}
+.night-arcade h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 50%;
+  text-align: left;
+}
+.soccer-team-vr {
+  background-image: url('/public/images/mobile/image-soccer-team.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  margin-bottom: 1em;
+}
+.soccer-team-vr h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 50%;
+  text-align: left;
+}
+.the-grid {
+  background-image: url('/public/images/mobile/image-grid.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  margin-bottom: 1em;
+}
+.the-grid h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 40%;
+  text-align: left;
+}
+.from-up-above {
+  background-image: url('/public/images/mobile/image-from-above.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  margin-bottom: 1em;
+}
+.from-up-above h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 50%;
+  text-align: left;
+}
+.pocket-borealis {
+  background-image: url('/public/images/mobile/image-pocket-borealis.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  margin-bottom: 1em;
+}
+.pocket-borealis h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 50%;
+  text-align: left;
+}
+.the-curiosity {
+  background-image: url('/public/images/mobile/image-curiosity.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  margin-bottom: 1em;
+}
+.the-curiosity h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 50%;
+  text-align: left;
+}
+.make-fish {
+  background-image: url('/public/images/mobile/image-fisheye.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  margin-bottom: 1em;
+}
+.make-fish h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 50%;
+  text-align: left;
+}
+.bt-see {
+  border: 1px solid #000;
+  background-color: transparent;
+  margin: 2em auto 8em auto;
+  padding: 1em 4em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 3px;
+}
+
+
+/* FooterComponent */
+.footer {
+  background-color: #000;
+  padding: 3em 0;
+}
+.footer div:nth-child(1) img {
+  padding-bottom: 1em;
+}
+.footer div ul {
+  color: #fff;
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+}
+.footer div ul li {
+  margin: 1em 0;
+}
+.socials img {
+  margin: 2em 1em;
+}
+.footer p {
+  color: rgb(127, 127, 127);
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
 }
