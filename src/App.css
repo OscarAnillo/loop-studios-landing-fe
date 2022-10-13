@@ -351,6 +351,12 @@
     margin-left: 2em;
     color: #fff;
   }
+  .nav-desktop ul li:hover {
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding-bottom: .1em;
+    cursor: pointer;
+  }
   
   
   /* HeroComponent */
@@ -402,6 +408,11 @@
     display: block;
     width: 732px;
     height: 500px;
+    transition: all .2s;
+  }
+  .article .desktop-img:hover {
+    filter: blur(2px) hue-rotate(100deg) contrast(200%);
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
   }
   .article div h1 {
     font-size: 2.3rem;
@@ -445,16 +456,42 @@
     text-transform: uppercase;
     color: #000;
     letter-spacing: 3px;
+    transition: all .2s;
+  }
+  .see-all-desktop:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
   }
   
   /* CreationCommonComponent */
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(243, 240, 233);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+
   .deep-earth {
     background-image: url('/public/images/desktop/image-deep-earth.jpg');
     height: 455px;
     width: 220px;
     margin-right: .5em;
+    transition: all .2s;
+  }
+  .deep-earth:hover .overlay {
+    opacity: .7;
+    cursor: pointer;
+    bottom: 0;
+    height: 100%;
   }
   .deep-earth h1 {
+    color: #000;
     top: 75%;
     left: 10%;
     width: 50%;
@@ -462,14 +499,19 @@
   }
   .night-arcade {
     background-image: url('/public/images/desktop/image-night-arcade.jpg');
-    background-position: center;
-    background-size: cover;
     height: 455px;
     width: 220px;
-    position: relative;
     margin-right: .6em;
+    transition: all .2s;
+  }
+  .night-arcade:hover .overlay{
+    opacity: .7;
+    cursor: pointer;
+    bottom: 0;
+    height: 100%;
   }
   .night-arcade h1 {
+    color: #000;
     top: 75%;
     left: 10%;
     width: 50%;
@@ -480,8 +522,16 @@
     height: 455px;
     width: 220px;
     margin-right: .6em;
+    transition: all .2s;
+  }
+  .soccer-team-vr:hover .overlay{
+    opacity: .7;
+    cursor: pointer;
+    bottom: 0;
+    height: 100%;
   }
   .soccer-team-vr h1 {
+    color: #000;
     top: 75%;
     left: 10%;
     width: 50%;
@@ -492,8 +542,16 @@
     height: 455px;
     width: 220px;
     margin-right: 0;
+    transition: all .2s;
+  }
+  .the-grid:hover .overlay{
+    opacity: .7;
+    cursor: pointer;
+    bottom: 0;
+    height: 100%;
   }
   .the-grid h1 {
+    color: #000;
     top: 75%;
     left: 10%;
     width: 50%;
@@ -505,7 +563,14 @@
     width: 220px;
     margin-right: .6em;
   }
+  .from-up-above:hover .overlay{
+    opacity: .7;
+    cursor: pointer;
+    bottom: 0;
+    height: 100%;
+  }
   .from-up-above h1 {
+    color: #000;
     top: 70%;
     left: 10%;
     width: 80%;
@@ -517,7 +582,14 @@
     width: 220px;
     margin-right: .5em;
   }
+  .pocket-borealis:hover .overlay{
+    opacity: .7;
+    cursor: pointer;
+    bottom: 0;
+    height: 100%;
+  }
   .pocket-borealis h1 {
+    color: #000;
     top: 70%;
     left: 10%;
     width: 80%;
@@ -529,7 +601,14 @@
     width: 220px;
     margin-right: .5em;
   }
+  .the-curiosity:hover .overlay {
+    opacity: .7;
+    cursor: pointer;
+    bottom: 0;
+    height: 100%;
+  }
   .the-curiosity h1 {
+    color: #000;
     top: 70%;
     left: 10%;
     width: 80%;
@@ -541,7 +620,14 @@
     width: 220px;
     margin-right: 0;
   }
+  .make-fish:hover .overlay{
+    opacity: .7;
+    cursor: pointer;
+    bottom: 0;
+    height: 100%;
+  }
   .make-fish h1 {
+    color: #000;
     top: 70%;
     left: 10%;
     width: 80%;
@@ -571,8 +657,19 @@
   .footer div ul li {
     margin: 1em;
   }
+  .footer div ul li:hover {
+    border: none;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+  }
   .socials img {
     margin: 0 1em 1.5em 1em;
+  }
+  .socials img:hover {
+    border: none;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    padding-bottom: .1em;
   }
   .footer p {
     color: rgb(127, 127, 127);
