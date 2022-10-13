@@ -9,3 +9,43 @@
 .App {
   text-align: center;
 }
+
+/* NavComponent */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding-top: 2em;
+}
+.nav-desktop {
+  display: none;
+}
+
+/* HeroComponent */
+.hero-bg {
+  background-image: url('/public/images/mobile/image-hero.jpg');
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+.hero-bg-div {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border: 1px solid #fff;
+}
+.hero-bg-div h1 {
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: .7em;
+  text-align: left;
+  letter-spacing: 1px;
+}
