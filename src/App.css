@@ -491,7 +491,7 @@
     background-image: url('/public/images/desktop/image-grid.jpg');
     height: 455px;
     width: 220px;
-    margin-right: .6em;
+    margin-right: 0;
   }
   .the-grid h1 {
     top: 75%;
@@ -539,7 +539,7 @@
     background-image: url('/public/images/desktop/image-fisheye.jpg');
     height: 455px;
     width: 220px;
-    margin-right: .5em;
+    margin-right: 0;
   }
   .make-fish h1 {
     top: 70%;
@@ -554,22 +554,218 @@
   
   /* FooterComponent */
   .footer {
-    background-color: #000;
-    padding: 3em 0;
+    padding: 2.25em 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 10em;
   }
+
   .footer div:nth-child(1) img {
-    padding-bottom: 1em;
+    padding-bottom: 0px;
   }
   .footer div ul {
-    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  .footer div ul li {
+    margin: 1em;
+  }
+  .socials img {
+    margin: 0 1em 1.5em 1em;
+  }
+  .footer p {
+    color: rgb(127, 127, 127);
     font-family: 'Alata', sans-serif;
     font-weight: 400;
   }
+}
+
+@media(min-width: 1440px){
+   
+  /* NavComponent */
+  .nav-desktop ul li {
+    margin-left: 4em;
+    text-shadow: 1px 1px 1px #000;
+  }
+  
+  
+  /* HeroComponent */
+  .hero-bg-div {
+    left: 28%;
+    width: 35%;
+  }
+  .hero-bg-div h1 {
+    font-size: 4.5rem;
+  }
+  
+  /* ArticleComponent */
+  .article > div:nth-child(1) {
+    height: 450px;
+  }
+  .article > div:nth-child(2) {
+    width: 50%;
+    top: 34%;
+  }
+  .article div h1 {
+    padding-bottom: 1em;
+    padding-top: 1.5em;
+  }
+  
+  /* MainComponent */
+  .main-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main-h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 2em;
+  }
+  .see-all-desktop {
+    display: block;
+  }
+  .see-all-desktop {
+    border: 1px solid #000;
+    background-color: transparent;
+    margin: 2em auto 8em auto;
+    padding: 1em 4em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 3px;
+  }
+  
+  /* CreationCommonComponent */
+  .deep-earth {
+    background-image: url('/public/images/desktop/image-deep-earth.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: .5em;
+  }
+  .deep-earth h1 {
+    top: 75%;
+    left: 10%;
+    width: 50%;
+    text-align: left;
+  }
+  .night-arcade {
+    background-image: url('/public/images/desktop/image-night-arcade.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 455px;
+    width: 250px;
+    position: relative;
+    margin-right: .6em;
+  }
+  .night-arcade h1 {
+    top: 75%;
+    left: 10%;
+    width: 50%;
+    text-align: left;
+  }
+  .soccer-team-vr {
+    background-image: url('/public/images/desktop/image-soccer-team.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: .6em;
+  }
+  .soccer-team-vr h1 {
+    top: 75%;
+    left: 10%;
+    width: 50%;
+    text-align: left;
+  }
+  .the-grid {
+    background-image: url('/public/images/desktop/image-grid.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: 0;
+  }
+  .the-grid h1 {
+    top: 75%;
+    left: 10%;
+    width: 50%;
+    text-align: left;
+  }
+  .from-up-above {
+    background-image: url('/public/images/desktop/image-from-above.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: .6em;
+  }
+  .from-up-above h1 {
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+  }
+  .pocket-borealis {
+    background-image: url('/public/images/desktop/image-pocket-borealis.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: .5em;
+  }
+  .pocket-borealis h1 {
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+  }
+  .the-curiosity {
+    background-image: url('/public/images/desktop/image-curiosity.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: .5em;
+  }
+  .the-curiosity h1 {
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+  }
+  .make-fish {
+    background-image: url('/public/images/desktop/image-fisheye.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: 0;
+  }
+  .make-fish h1 {
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+  }
+  .bt-see {
+    display: none;
+  }
+  
+  
+  /* FooterComponent */
+  .footer {
+    padding: 2.25em 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 10em;
+  }
+
+  .footer div:nth-child(1) img {
+    padding-bottom: 0px;
+  }
+  .footer div ul {
+    display: flex;
+    align-items: center;
+  }
   .footer div ul li {
-    margin: 1em 0;
+    margin: 1em;
   }
   .socials img {
-    margin: 2em 1em;
+    margin: 0 1em 1.5em 1em;
   }
   .footer p {
     color: rgb(127, 127, 127);
