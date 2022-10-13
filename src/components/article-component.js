@@ -3,6 +3,7 @@ export default function ArticleComponent(){
         <article className="article">
             <div>
                 <img src="/images/mobile/image-interactive.jpg" alt="" />
+                <img src="/images/desktop/image-interactive.jpg" alt="" className="desktop-img"/>
             </div>
             <div>
                 <h1>The leader in interactive vr</h1>

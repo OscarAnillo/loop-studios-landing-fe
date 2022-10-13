@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   list-style: none;
 }
 
@@ -53,10 +54,11 @@
   font-weight: 300;
   text-transform: uppercase;
   text-align: left;
-  padding-left: .4em;
+  padding: 5em 0 2em 0.4em;
 }
 .mobile-inner-menu ul li {
-  margin: 2.5em 0;
+  margin: 2em 0;
+  font-size: 2rem;
 }
 
 /* HeroComponent */
@@ -94,6 +96,9 @@
   width: 100%;
   padding-bottom: 50px;
 }
+.desktop-img {
+  display: none;
+}
 .article div h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
@@ -117,12 +122,16 @@
   text-transform: uppercase;
   padding-bottom: 2em;
 }
+.see-all-desktop {
+  display: none;
+}
 
 /* CreationCommonComponent */
 .deep-earth {
   background-image: url('/public/images/mobile/image-deep-earth.jpg');
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 200px;
   position: relative;
   margin-bottom: 1em;
@@ -307,4 +316,460 @@
   color: rgb(127, 127, 127);
   font-family: 'Alata', sans-serif;
   font-weight: 400;
+}
+
+
+@media(min-width: 1000px) {
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* NavComponent */
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 4em;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .nav-desktop {
+    display: block;
+  }
+  .nav-desktop ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Alata', sans-serif;
+  }
+  .nav-desktop ul li {
+    margin-left: 2em;
+    color: #fff;
+  }
+  
+  
+  /* HeroComponent */
+  .hero-bg {
+    background-image: url('/public/images/desktop/image-hero.jpg');
+    background-position: left;
+    height: 850px;
+    transition: all .3s ease;
+  }
+  .hero-bg:hover {
+    filter: blur(1px) contrast(300%) hue-rotate(15deg);
+  }
+  .hero-bg-div {
+    top: 18%;
+    left: 38%;
+    border: 2px solid #fff;
+    width: 55%;
+  }
+  .hero-bg-div h1 {
+    font-size: 4rem;
+    padding: .6em;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000;
+  }
+  
+  /* ArticleComponent */
+  .article {
+    margin: 8em 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+  }
+  .article > div:nth-child(1) {
+    height: 500px;
+  }
+  .article > div:nth-child(2) {
+    background-color: #fff;
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    height: 300px;
+  }
+  .article div img {
+    display: none;
+  }
+  .article .desktop-img {
+    display: block;
+    width: 732px;
+    height: 500px;
+  }
+  .article div h1 {
+    font-size: 2.3rem;
+    padding-bottom: .6em;
+    padding-top: 1.5em;
+    width: 70%;
+    margin: auto;
+  }
+  .article div p {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    color: rgb(127, 127, 127);
+    line-height: 1.6em;
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* MainComponent */
+  .main-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main-h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 2em;
+  }
+  .see-all-desktop {
+    display: block;
+  }
+  .see-all-desktop {
+    border: 1px solid #000;
+    background-color: transparent;
+    margin: 2em auto 8em auto;
+    padding: 1em 4em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 3px;
+  }
+  
+  /* CreationCommonComponent */
+  .deep-earth {
+    background-image: url('/public/images/desktop/image-deep-earth.jpg');
+    height: 455px;
+    width: 220px;
+    margin-right: .5em;
+  }
+  .deep-earth h1 {
+    top: 75%;
+    left: 10%;
+    width: 50%;
+    text-align: left;
+  }
+  .night-arcade {
+    background-image: url('/public/images/desktop/image-night-arcade.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 455px;
+    width: 220px;
+    position: relative;
+    margin-right: .6em;
+  }
+  .night-arcade h1 {
+    top: 75%;
+    left: 10%;
+    width: 50%;
+    text-align: left;
+  }
+  .soccer-team-vr {
+    background-image: url('/public/images/desktop/image-soccer-team.jpg');
+    height: 455px;
+    width: 220px;
+    margin-right: .6em;
+  }
+  .soccer-team-vr h1 {
+    top: 75%;
+    left: 10%;
+    width: 50%;
+    text-align: left;
+  }
+  .the-grid {
+    background-image: url('/public/images/desktop/image-grid.jpg');
+    height: 455px;
+    width: 220px;
+    margin-right: 0;
+  }
+  .the-grid h1 {
+    top: 75%;
+    left: 10%;
+    width: 50%;
+    text-align: left;
+  }
+  .from-up-above {
+    background-image: url('/public/images/desktop/image-from-above.jpg');
+    height: 455px;
+    width: 220px;
+    margin-right: .6em;
+  }
+  .from-up-above h1 {
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+  }
+  .pocket-borealis {
+    background-image: url('/public/images/desktop/image-pocket-borealis.jpg');
+    height: 455px;
+    width: 220px;
+    margin-right: .5em;
+  }
+  .pocket-borealis h1 {
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+  }
+  .the-curiosity {
+    background-image: url('/public/images/desktop/image-curiosity.jpg');
+    height: 455px;
+    width: 220px;
+    margin-right: .5em;
+  }
+  .the-curiosity h1 {
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+  }
+  .make-fish {
+    background-image: url('/public/images/desktop/image-fisheye.jpg');
+    height: 455px;
+    width: 220px;
+    margin-right: 0;
+  }
+  .make-fish h1 {
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+  }
+  .bt-see {
+    display: none;
+  }
+  
+  
+  /* FooterComponent */
+  .footer {
+    padding: 2.25em 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 10em;
+  }
+
+  .footer div:nth-child(1) img {
+    padding-bottom: 0px;
+  }
+  .footer div ul {
+    display: flex;
+    align-items: center;
+  }
+  .footer div ul li {
+    margin: 1em;
+  }
+  .socials img {
+    margin: 0 1em 1.5em 1em;
+  }
+  .footer p {
+    color: rgb(127, 127, 127);
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+  }
+}
+
+@media(min-width: 1440px){
+   
+  /* NavComponent */
+  .nav-desktop ul li {
+    margin-left: 4em;
+    text-shadow: 1px 1px 1px #000;
+  }
+  
+  
+  /* HeroComponent */
+  .hero-bg-div {
+    left: 28%;
+    width: 35%;
+  }
+  .hero-bg-div h1 {
+    font-size: 4.5rem;
+  }
+  
+  /* ArticleComponent */
+  .article > div:nth-child(1) {
+    height: 450px;
+  }
+  .article > div:nth-child(2) {
+    width: 50%;
+    top: 34%;
+  }
+  .article div h1 {
+    padding-bottom: 1em;
+    padding-top: 1.5em;
+  }
+  
+  /* MainComponent */
+  .main-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main-h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 2em;
+  }
+  .see-all-desktop {
+    display: block;
+  }
+  .see-all-desktop {
+    border: 1px solid #000;
+    background-color: transparent;
+    margin: 2em auto 8em auto;
+    padding: 1em 4em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 3px;
+  }
+  
+  /* CreationCommonComponent */
+  .deep-earth {
+    background-image: url('/public/images/desktop/image-deep-earth.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: .5em;
+  }
+  .deep-earth h1 {
+    top: 75%;
+    left: 10%;
+    width: 50%;
+    text-align: left;
+  }
+  .night-arcade {
+    background-image: url('/public/images/desktop/image-night-arcade.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 455px;
+    width: 250px;
+    position: relative;
+    margin-right: .6em;
+  }
+  .night-arcade h1 {
+    top: 75%;
+    left: 10%;
+    width: 50%;
+    text-align: left;
+  }
+  .soccer-team-vr {
+    background-image: url('/public/images/desktop/image-soccer-team.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: .6em;
+  }
+  .soccer-team-vr h1 {
+    top: 75%;
+    left: 10%;
+    width: 50%;
+    text-align: left;
+  }
+  .the-grid {
+    background-image: url('/public/images/desktop/image-grid.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: 0;
+  }
+  .the-grid h1 {
+    top: 75%;
+    left: 10%;
+    width: 50%;
+    text-align: left;
+  }
+  .from-up-above {
+    background-image: url('/public/images/desktop/image-from-above.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: .6em;
+  }
+  .from-up-above h1 {
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+  }
+  .pocket-borealis {
+    background-image: url('/public/images/desktop/image-pocket-borealis.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: .5em;
+  }
+  .pocket-borealis h1 {
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+  }
+  .the-curiosity {
+    background-image: url('/public/images/desktop/image-curiosity.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: .5em;
+  }
+  .the-curiosity h1 {
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+  }
+  .make-fish {
+    background-image: url('/public/images/desktop/image-fisheye.jpg');
+    height: 455px;
+    width: 250px;
+    margin-right: 0;
+  }
+  .make-fish h1 {
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    text-align: left;
+  }
+  .bt-see {
+    display: none;
+  }
+  
+  
+  /* FooterComponent */
+  .footer {
+    padding: 2.25em 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 10em;
+  }
+
+  .footer div:nth-child(1) img {
+    padding-bottom: 0px;
+  }
+  .footer div ul {
+    display: flex;
+    align-items: center;
+  }
+  .footer div ul li {
+    margin: 1em;
+  }
+  .socials img {
+    margin: 0 1em 1.5em 1em;
+  }
+  .footer p {
+    color: rgb(127, 127, 127);
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+  }
 }

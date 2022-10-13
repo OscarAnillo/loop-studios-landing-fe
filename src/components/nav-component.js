@@ -20,10 +20,10 @@ export default function NavComponent(){
                     <li>Careers</li>
                     <li>Events</li>
                     <li>Products</li>
-                    <li>support</li>
+                    <li>Support</li>
                 </ul>
             </div>
-            <div onClick={clickHandlerOpen}>
+            <div onClick={clickHandlerOpen} className="nav-mobile">
                 <img src="/images/icon-hamburger.svg" alt="" />
             </div>
             {showMenu ? 

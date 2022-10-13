@@ -3,8 +3,6 @@ export default function FooterComponent(){
         <footer className="footer">
             <div>
                 <img src="/images/logo.svg" alt="" />
-            </div>
-            <div>
                 <ul>
                     <li>About</li>
                     <li>Careers</li>
@@ -18,8 +16,8 @@ export default function FooterComponent(){
                 <img src="/images/icon-twitter.svg" alt="" />
                 <img src="/images/icon-pinterest.svg" alt="" />
                 <img src="/images/icon-instagram.svg" alt="" />
+                <p>© 2022 Loopstudios. All rights reserved.</p>
             </div>
-            <p>© 2022 Loopstudios. All rights reserved.</p>
         </footer>
     )
 }
