@@ -94,6 +94,9 @@
   width: 100%;
   padding-bottom: 50px;
 }
+.desktop-img {
+  display: none;
+}
 .article div h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
@@ -313,6 +316,7 @@
 @media(min-width: 1000px) {
   .container {
     width: 90%;
+    max-width: 1100px;
     margin: auto;
   }
   
@@ -338,59 +342,73 @@
     font-family: 'Alata', sans-serif;
   }
   .nav-desktop ul li {
-    margin-left: 2em;
+    margin-left: 4em;
     color: #fff;
   }
   
   
   /* HeroComponent */
   .hero-bg {
-    background-image: url('/public/images/mobile/image-hero.jpg');
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-    position: relative;
+    background-image: url('/public/images/desktop/image-hero.jpg');
+    background-position: left;
+    height: 850px;
+    transition: all .3s ease;
+  }
+  .hero-bg:hover {
+    filter: blur(1px) contrast(300%) hue-rotate(15deg);
   }
   .hero-bg-div {
-    position: absolute;
-    top: 22%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    border: 1px solid #fff;
+    top: 18%;
+    left: 35%;
+    border: 2px solid #fff;
+    width: 50%;
   }
   .hero-bg-div h1 {
-    color: #fff;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding: .7em;
-    text-align: left;
-    letter-spacing: 1px;
+    font-size: 4rem;
+    padding: .6em;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000;
   }
   
   /* ArticleComponent */
   .article {
-    margin: 6em 0;
+    margin: 8em 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+  }
+  .article > div:nth-child(1) {
+    height: 500px;
+  }
+  .article > div:nth-child(2) {
+    background-color: #fff;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 300px;
   }
   .article div img {
-    width: 100%;
-    padding-bottom: 50px;
+    display: none;
+  }
+  .article .desktop-img {
+    display: block;
+    width: 732px;
+    height: 500px;
   }
   .article div h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    font-size: 2.1rem;
-    text-transform: uppercase;
-    padding-bottom: 1.5em;
+    font-size: 2.3rem;
+    padding-bottom: 1em;
+    padding-top: 1.5em;
+    width: 70%;
+    margin: auto;
   }
   .article div p {
     font-family: 'Alata', sans-serif;
     font-weight: 400;
     color: rgb(127, 127, 127);
     line-height: 1.6em;
-    width: 90%;
+    width: 80%;
     margin: auto;
   }
   
