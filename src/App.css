@@ -657,8 +657,19 @@
   .footer div ul li {
     margin: 1em;
   }
+  .footer div ul li:hover {
+    border: none;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+  }
   .socials img {
     margin: 0 1em 1.5em 1em;
+  }
+  .socials img:hover {
+    border: none;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    padding-bottom: .1em;
   }
   .footer p {
     color: rgb(127, 127, 127);
